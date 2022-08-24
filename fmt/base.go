@@ -154,9 +154,14 @@ func FormatFile(module, file string) error {
 	}
 	result := FormatCode(module, string(data))
 	f, _ := os.Stat(file)
+	if result == string(data) {
+		// nothing changed
+		return nil
+	}
 	err = os.WriteFile(file, []byte(result), f.Mode())
 	if err != nil {
 		return errors.Trace(err)
 	}
+	fmt.Println("formatted", file)
 	return nil
 }
