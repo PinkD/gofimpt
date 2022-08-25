@@ -10,7 +10,7 @@ import (
 
 	"github.com/go-git/go-git/v5"
 
-	"gofimpt/errors"
+	"github.com/PinkD/gofimpt/errors"
 )
 
 func Run(ts []string, f func(int, string) error) []error {

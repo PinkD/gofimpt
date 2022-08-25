@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	gfmt "gofimpt/fmt"
+	gfmt "github.com/PinkD/gofimpt/fmt"
 )
 
 func printHelpAndExit() {

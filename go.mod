@@ -1,4 +1,4 @@
-module gofimpt
+module github.com/PinkD/gofimpt
 
 go 1.18
 

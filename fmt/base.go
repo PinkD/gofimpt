@@ -6,7 +6,7 @@ import (
 	"sort"
 	"strings"
 
-	"gofimpt/errors"
+	"github.com/PinkD/gofimpt/errors"
 )
 
 type Import struct {
