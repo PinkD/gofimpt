@@ -110,13 +110,17 @@ func fmtImport(module, content string) string {
 		lines = append(lines, builtin.String())
 	}
 	if len(thirdParties) != 0 {
-		lines = append(lines, "")
+		if len(lines) != 0 {
+			lines = append(lines, "")
+		}
 		for _, thirdParty := range thirdParties {
 			lines = append(lines, thirdParty.String())
 		}
 	}
 	if len(modules) != 0 {
-		lines = append(lines, "")
+		if len(lines) != 0 {
+			lines = append(lines, "")
+		}
 		for _, module := range modules {
 			lines = append(lines, module.String())
 		}
